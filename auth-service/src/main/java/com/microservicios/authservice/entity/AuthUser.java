@@ -10,11 +10,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
-@Data
+
+
 @NoArgsConstructor
 @AllArgsConstructor
+@Data
 @Builder
+@Entity
 public class AuthUser {
 
     @Id
