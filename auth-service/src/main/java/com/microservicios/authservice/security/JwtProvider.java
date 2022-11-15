@@ -50,7 +50,7 @@ public class JwtProvider {
         try{
             return Jwts.parser().setSigningKey(secret).parseClaimsJwt(token).getBody().getSubject();
         }catch(Exception exception){
-            return null;
+            return "bad token";
         }
     }
 }
